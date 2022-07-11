@@ -27,6 +27,8 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok') // gradle 5 이상부터 어노테이션을 구별해서 추가해야 한다.
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
